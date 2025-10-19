@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <header>
+      <h2 data-testid="test-user-name" aria-label="User's Name">Johnson Oyemade</h2>
+    </header>
+    <p data-testid="test-user-bio">
+      Johnson is a passionate web developer who enjoys crafting beautiful and accessible websites. He loves learning new technologies and collaborating in diverse teams.
+    </p>
+    <div>
+      Current time (ms): <span data-testid="test-user-time"></span>
+    </div>
+    <figure>
+      <img 
+        data-testid="test-user-avatar" 
+        src="https://randomuser.me/api/portraits/men/17.jpg" 
+        alt="User avatar: John Doe"
+        width="120" height="120">
+    </figure>
+    <nav aria-label="User social links" data-testid="test-user-social-links">
+      <ul>
+        <li>
+          <a href="https://twitter.com/Codajhay" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/therealjhay" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/oyemade-johnson" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+    <section aria-label="User hobbies" data-testid="test-user-hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Coding practice</li>
+        <li>Hiking</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+    <section aria-label="User dislikes" data-testid="test-user-dislikes">
+      <h3>Dislikes</h3>
+      <ul>
+        <li>Unreachable code</li>
+        <li>Bad documentation</li>
+        <li>Spam emails</li>
+      </ul>
+    </section>
+  </article>
+  
+  <script src="script.js"></script>
+</body>
+</html>
