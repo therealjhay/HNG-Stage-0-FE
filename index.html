@@ -3,11 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accessible Profile Card</title>
+  <title>Johnson Oyemade – Profile Card</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <article data-testid="test-profile-card">
+  <nav class="main-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html" class="nav-btn" aria-current="page">Profile Card</a></li>
+      <li><a href="about.html" class="nav-btn">About Me</a></li>
+      <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main class="page-section" data-testid="test-profile-card">
     <header>
       <h2 data-testid="test-user-name" aria-label="User's Name">Johnson Oyemade</h2>
     </header>
@@ -50,8 +57,7 @@
         <li>Spam emails</li>
       </ul>
     </section>
-  </article>
-
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

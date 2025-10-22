@@ -8,7 +8,7 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 
-// (Optional) Enhance keyboard accessibility with visible focus for all links/buttons
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("a, button").forEach(el => {
     el.addEventListener("keyup", e => {
